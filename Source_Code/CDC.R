@@ -1340,10 +1340,9 @@ cat("5. CALIBRATION: Apply Platt scaling before using probabilities clinically.\
 cat("6. SMOTE: Essential for minority class detection - always use in retraining.\n")
 
 # Stop parallel cluster cleanly
-##stopCluster(cl)
-##registerDoSEQ()
-##cat("Parallel cluster stopped.
-##")
+stopCluster(cl)
+registerDoSEQ()
+cat("Parallel cluster stopped.")
 
 # Close PDF device - all plots saved to CDC_all_plots.pdf
 dev.off()
